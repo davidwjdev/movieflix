@@ -1,0 +1,87 @@
+@import '../../global.sass'
+
+//formatação comum entre as telas
+#containerNavBar
+    background-color: $roxo
+    display: flex
+    align-items: center
+    padding: 10px
+
+#search
+    background-image: url('../../assets/icon/search-solid.svg')
+    background-repeat: no-repeat
+    background-position: 10px center
+    background-size: 15px
+    padding: 5px 20px 5px 40px
+    border-radius: 2px
+    border: none
+    width: 80%
+
+
+.iconButton
+    width: 20px
+    height: 20px
+    
+.iconButton:hover
+
+    -webkit-filter: drop-shadow(0 0 11px $cinzaEscuro)     
+    filter: drop-shadow(0 0 7px $cinzaEscuro)
+
+
+
+//formatação para mobile
+@media screen and (max-width: $celular) 
+    #containerNavBar
+        flex-direction: column
+
+
+    #logoDiv
+        margin: 5px
+    
+    #logo
+        height: 25px
+        weight: 25px
+        padding: 5px
+
+
+    #searchDiv
+        width: 80%
+        margin: 5px
+    
+    #search
+        padding: 12px 20px 12px 40px
+
+        
+    #buttonDiv
+        display: flex
+        width: 100%
+        flex-direction: row
+        justify-content: space-around
+        margin: 5px
+
+    .iconButton
+        margin: 5px
+
+
+//formatação para tablet e desktop
+@media screen and (min-width: $tablet) 
+    #containerNavBar
+        justify-content: space-between
+
+    #logo
+        height: 30px
+        weight: 30px
+        padding: 5px
+    
+    #searchDiv
+        width: 60%
+        margin: 5px
+
+    #search
+        padding: 5px 20px 5px 40px
+
+    .iconButton
+        margin: 0 20px
+
+
+        
