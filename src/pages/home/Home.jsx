@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import InfiniteScroll from "react-infinite-scroller";
 
 import { Movie } from "../../components/movie/Movie";
 import { Navbar } from "../../components/navbar/Navbar";
@@ -31,16 +30,6 @@ export function Home() {
       <div id="moviesDiv">
         <div id="listMovies">
           {movies.map((movie) => (
-            // <InfiniteScroll
-            //   pageStart={0}
-            //   loadMore={loadFunc}
-            //   hasMore={true || false}
-            //   loader={
-            //     <div className="loader" key={0}>
-            //       Loading ...
-            //     </div>
-            //   }
-            // >
               <Movie
                 key={movie.id}
                 poster_path={
@@ -50,7 +39,6 @@ export function Home() {
                 title={movie.title}
                 vote_average={movie.vote_average}
               />
-            // </InfiniteScroll>
           ))}
         </div>
       </div>

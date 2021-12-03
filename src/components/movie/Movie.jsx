@@ -8,7 +8,7 @@ import iconHeartSolid from "../../assets/icon/heart-solid.svg";
 import iconStarSolid from "../../assets/icon/star-solid.svg";
 
 export function Movie({ poster_path, release_date, vote_average, title }) {
-  const dataOriginal = moment(release_date); //.format("DD [de] MMMM,YYYY");
+  const dataOriginal = moment(release_date);
   return (
     <div className="containerMovie">
       <div className="imgDiv">
