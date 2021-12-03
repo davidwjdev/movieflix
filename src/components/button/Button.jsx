@@ -4,9 +4,9 @@ import "./Button.sass";
 export function Button({children}) {
   return (
     <div id="containerButton">
-      <a href id="button">
+      <button id="button">
         {children}
-      </a>
+      </button>
     </div>
   );
 }
